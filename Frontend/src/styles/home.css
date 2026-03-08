@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap");
+
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #31572c;
+  color: white;
+  padding: 24px 0;
+}
+
+.home-header-left {
+  line-height: 0.9;
+  font-family: "Baloo 2", sans-serif;
+}
+
+.home-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.home-greeting {
+  color: #bdbbb6;
+}
+
+.home-username {
+  font-size: 42px;
+}
+
+.home-icon-btn,
+.home-profile-btn {
+  padding: 6px 8px;
+  border-radius: 50%;
+  border: none;
+}
+
+.home-icon-btn img {
+  width: 3em;
+}
