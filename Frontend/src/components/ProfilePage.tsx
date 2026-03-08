@@ -39,12 +39,18 @@ export function ProfilePage() {
       setErrors({ general: result.error || "Failed to save. Try again." });
       return;
     }
-    setStep("success");
+    setStep("goal");
   };
 
   return (
     <div class="page profile-page">
       <div class="page-inner">
+        <button class="back-btn" onClick={() => setStep("otp")}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+
         <div class="brand">
           <div class="brand-icon">
             <svg viewBox="0 0 40 40" fill="none">

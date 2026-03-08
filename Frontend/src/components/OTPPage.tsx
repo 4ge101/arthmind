@@ -29,7 +29,8 @@ export function OTPPage() {
       reset();
       return;
     }
-    setStep("success");
+    // ✅ Go to profile step instead of success
+    setStep("profile");
   };
 
   const handleResend = async () => {
@@ -38,7 +39,6 @@ export function OTPPage() {
     setCanResend(false);
     setResendTimer(30);
     setError("");
-    // re-send OTP
     const { sendOTP } = await import("../services/otpService.ts");
     const fullPhone = `${country.dial_code}${phone.trim()}`;
     await sendOTP(fullPhone);
